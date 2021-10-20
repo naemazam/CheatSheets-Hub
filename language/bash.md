@@ -1,7 +1,26 @@
-#!/bin/bash
-##############################################################################
-# SHORTCUTS and HISTORY
-##############################################################################
+[CheatSheets-Hub](https://naemazam.github.io/CheatSheets-Hub/)
+#  Bash Shortcut      
+**Menu**
+ - [ ] SHORTCUTS  
+ - [ ] BASH BASICS
+ - [ ] FILE COMMANDS
+ - [ ] DIRECTORY COMMANDS
+ - [ ] SSH, SYSTEM INFO & NETWORK
+ - [ ] VARIABLES
+ - [ ] FUNCTIONS
+ - [ ] FLOW CONTROLS
+ - [ ] STRINGS
+ - [ ] FILES
+ - [ ] NUMBERS
+ - [ ] PROCESSING CYCLE
+ - [ ] INPUT/OUTPUT REDIRECTORS
+ - [ ] PROCESS HANDLING
+ - [ ] TIPS & TRICKS
+ - [ ] COLORS AND BACKGROUNDS
+ - [ ] DEBUGGING SHELL PROGRAMS
+
+# SHORTCUTS 
+
 
 CTRL+A  # move to beginning of line
 CTRL+B  # moves backward one character
@@ -59,9 +78,8 @@ history   # shows command line history
 exit      # logs out of current session
 
 
-##############################################################################
 # BASH BASICS
-##############################################################################
+
 
 env                 # displays all environment variables
 
@@ -75,9 +93,8 @@ which bash          # finds out which program is executed as 'bash' (default: /b
 clear               # clears content on window (hide displayed lines)
 
 
-##############################################################################
+
 # FILE COMMANDS
-##############################################################################
 
 
 ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
@@ -122,9 +139,8 @@ sed 's/<pattern>/<replacement>/g' <filename> # replace pattern in file with repl
 sed -i 's/<pattern>/<replacement>/g' <filename> # replace pattern in file with replacement value in place
 echo "this" | sed 's/is/at/g' # replace pattern from input stream with replacement value
 
-##############################################################################
+
 # DIRECTORY COMMANDS
-##############################################################################
 
 
 mkdir <dirname>               # makes a new directory
@@ -139,10 +155,8 @@ pwd                           # tells you where you currently are
 cd ~                          # changes to home.
 cd -                          # changes to previous working directory
 
-##############################################################################
-# SSH, SYSTEM INFO & NETWORK COMMANDS
-##############################################################################
 
+# SSH, SYSTEM INFO & NETWORK COMMANDS
 
 ssh user@host            # connects to host as user
 ssh -p <port> user@host  # connects to host on specified port as user
@@ -186,9 +200,9 @@ netstat                  # Print network connections, routing tables, interface 
 time <command>             # report time consumed by command execution
 
 
-##############################################################################
+
 # VARIABLES
-##############################################################################
+
 
 
 varname=value                # defines a variable
@@ -245,13 +259,12 @@ ${#varname}                  # returns the length of the value of the variable a
 $(UNIX command)              # command substitution: runs the command and returns standard output
 
 
-##############################################################################
 # FUNCTIONS
-##############################################################################
 
 
-# The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
-# $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
+
+#The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
+#$@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
 
 
 function functname() {
@@ -262,9 +275,9 @@ unset -f functname  # deletes a function definition
 declare -f          # displays all defined functions in your login session
 
 
-##############################################################################
+
 # FLOW CONTROLS
-##############################################################################
+
 
 
 statement1 && statement2  # and operator
@@ -353,13 +366,12 @@ until condition; do
   statements
 done
 
-##############################################################################
+
 # COMMAND-LINE PROCESSING CYCLE
-##############################################################################
 
 
-# The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
-# There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
+ The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
+ There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
 
 command  # removes alias and function lookup. Only built-ins and commands found in the search path are executed
 builtin  # looks up only built-in commands, ignoring functions and commands found in PATH
@@ -368,9 +380,9 @@ enable   # enables and disables shell built-ins
 eval     # takes arguments and run them through the command-line processing steps all over again
 
 
-##############################################################################
+
 # INPUT/OUTPUT REDIRECTORS
-##############################################################################
+##
 
 
 cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
@@ -397,14 +409,14 @@ n<&-       # closes the input from file descriptor n
 |tee <file># output command to both terminal and a file (-a to append to file)
 
 
-##############################################################################
+
 # PROCESS HANDLING
-##############################################################################
 
 
-# To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
-# This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
-# Of course, to interrupt a job, type CTRL+C.
+
+#To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
+ This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
+ Of course, to interrupt a job, type CTRL+C.
 
 myCommand &  # runs job in the background and prompts back the shell
 
@@ -439,9 +451,9 @@ pv                  # display progress bar for data handling commands. often use
 yes                 # give yes response everytime an input is requested from script/process
 
 
-##############################################################################
+
 # TIPS & TRICKS
-##############################################################################
+
 
 
 # set an alias
@@ -457,9 +469,9 @@ source .bashrc
 cd $websites
 
 
-##############################################################################
+
 # DEBUGGING SHELL PROGRAMS
-##############################################################################
+
 
 
 bash -n scriptname  # don't run commands; check for syntax errors only
@@ -485,7 +497,8 @@ function dbgtrap {
 }
 
 trap dbgtrap DEBUG  # causes the trap code to be executed before every statement in a function or script
-# ...section of code in which the problem occurs...
+
+ ...section of code in which the problem occurs...
 trap - DEBUG  # turn off the DEBUG trap
 
 function returntrap {
@@ -494,9 +507,9 @@ function returntrap {
 
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 
-##############################################################################
+
 # COLORS AND BACKGROUNDS 
-##############################################################################
+
 # note: \e or \x1B also work instead of \033 
 # Reset
 Color_Off='\033[0m' # Text Reset
@@ -555,5 +568,8 @@ On_White='\033[47m' # White
 # Example of usage
 echo -e "${Green}This is GREEN text${Color_Off} and normal text"
 echo -e "${Red}${On_White}This is Red test on White background${Color_Off}" 
-# option -e is mandatory, it enable interpretation of backslash escapes
+
+ option -e is mandatory, it enable interpretation of backslash escapes
 printf "${Red} This is red \n"
+
+# Thanks 
