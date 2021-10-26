@@ -1,23 +1,23 @@
 [CheatSheets-Hub](https://naemazam.github.io/CheatSheets-Hub/)
 #  Bash Shortcut      
 **Menu**
- - [ ] SHORTCUTS  
- - [ ] BASH BASICS
- - [ ] FILE COMMANDS
- - [ ] DIRECTORY COMMANDS
- - [ ] SSH, SYSTEM INFO & NETWORK
- - [ ] VARIABLES
- - [ ] FUNCTIONS
- - [ ] FLOW CONTROLS
- - [ ] STRINGS
- - [ ] FILES
- - [ ] NUMBERS
- - [ ] PROCESSING CYCLE
- - [ ] INPUT/OUTPUT REDIRECTORS
- - [ ] PROCESS HANDLING
- - [ ] TIPS & TRICKS
- - [ ] COLORS AND BACKGROUNDS
- - [ ] DEBUGGING SHELL PROGRAMS
+ - [ ] [SHORTCUTS](bash.md#shortcuts)  
+ - [ ] [BASH BASICS](bash.md#bash-basics)
+ - [ ] [FILE COMMANDS](bash.md#FILE-COMMANDS)
+ - [ ] [DIRECTORY COMMANDS](bash.md#DIRECTORY-COMMANDS)
+ - [ ] [SSH, SYSTEM INFO & NETWORK](bash.md#ssh-system-info--network-commands)
+ - [ ] [VARIABLES](bash.md#VARIABLES)
+ - [ ] [FUNCTIONS](bash.md#FUNCTIONS)
+ - [ ] [FLOW CONTROLS](bash.md#FLOW-CONTROLS)
+ - [ ] [STRINGS](bash.md#STRINGS)
+ - [ ] [FILES](bash.md#FILES)
+ - [ ] [NUMBERS](bash.md#NUMBERS)
+ - [ ] [PROCESSING CYCLE](bash.md#PROCESSING-CYCLE)
+ - [ ] [INPUT/OUTPUT REDIRECTORS](bash.md#INPUT/OUTPUT-REDIRECTORS)
+ - [ ] [PROCESS HANDLING](bash.md#PROCESS-HANDLING)
+ - [ ] [TIPS & TRICKS](bash.md#TIPS-&-TRICKS)
+ - [ ] [COLORS AND BACKGROUNDS](bash.md#COLORS-AND-BACKGROUNDS)
+ - [ ] [DEBUGGING SHELL PROGRAMS](bash.md#DEBUGGING-SHELL-PROGRAMS)
 
 # SHORTCUTS 
 
