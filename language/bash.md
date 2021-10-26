@@ -1,8 +1,9 @@
 [CheatSheets-Hub](https://naemazam.github.io/CheatSheets-Hub/)
 #  Bash Shortcut      
 **Menu**
- - [ ] [SHORTCUTS](bash.md#shortcuts)  
- - [ ] [BASH BASICS](bash.md#bash-basics)
+ 
+ [SHORTCUTS](bash.md#shortcuts)  
+ [BASH BASICS](bash.md#bash-basics)
  - [ ] [FILE COMMANDS](bash.md#FILE-COMMANDS)
  - [ ] [DIRECTORY COMMANDS](bash.md#DIRECTORY-COMMANDS)
  - [ ] [SSH, SYSTEM INFO & NETWORK](bash.md#ssh-system-info--network-commands)
